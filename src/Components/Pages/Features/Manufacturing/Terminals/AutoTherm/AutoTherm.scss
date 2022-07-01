@@ -1,0 +1,133 @@
+@import "../../../../../../Styles/stylesCombine";
+.AutoTherm{
+
+
+    .AutoThermBody{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        width: 100%;
+        gap: 15px;
+        
+        .Left{
+            width: inherit;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding-left: 0;
+            border: none;
+            .Overview{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                row-gap: 40px;
+                .Item{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 7px;
+                    .Title{
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 17px;
+                    }
+                    .Value{
+                        text-align: left;
+                        font-size: 14px;
+                        color: #000;
+                    }
+                    
+                }
+            }
+            .OrderNotes{
+                .NoteHeader{
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-align: left;
+                }
+                .NoteList{
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    height: 300px;
+                    overflow-y: scroll;
+                    .NoteDetail{
+                        .Poster{
+                            text-align: left;
+                        }
+                        .Description{
+                            text-align: left;
+                            padding-left: 10px;
+                            border-left: 1px solid rgb(185, 185, 185);
+                        }
+                    }
+                }
+            }
+            .ItemList{
+                .ItemHeader{
+                    
+                    align-items: center;
+                    display: grid;
+                    grid-template-columns: 80px 90px 180px 1fr 100px 142px;
+                    height: 70px;
+                    border-bottom: 1px solid rgb(212, 212, 212);
+                    .Title{
+                        font-size: 15px;
+                        
+                        text-align: left;
+                        &::before{
+                            content: none;
+                        }
+                        &.Header{
+                            font-weight: 500;
+                        }
+                    }
+                    .Icon{
+                        font-size: 25px;
+                        
+                    }
+                    .Action{
+                        display: flex;
+                        justify-content: flex-end;
+                        gap: 20px;
+                    }
+                }
+            }
+            
+        }
+        .Right{
+           width: 25%;
+           display: flex;
+           flex-direction: column;
+           gap: 15px;
+           .OrderInfo{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+                .Label{
+
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-align: left;
+                }
+                .Value{
+                    font-size: 35px;
+                    color: #000;
+                    font-weight: bold;
+                }
+                .TicketValue{
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+                .HistoryProduct{
+                    font-size: 15px;
+                }
+            }
+           .Support{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                    
+           }
+        }
+    }
+}

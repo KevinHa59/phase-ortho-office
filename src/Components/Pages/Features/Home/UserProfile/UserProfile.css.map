@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "UserProfile.scss"
-    ],
-    "names": [],
-    "file": "UserProfile.css"
-}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"UserProfile.css"}

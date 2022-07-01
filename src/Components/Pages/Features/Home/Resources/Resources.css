@@ -1,1 +1,62 @@
-/* No CSS *//*# sourceMappingURL=Resources.css.map */
+.Resources {
+  text-align: left;
+}
+.Resources .SubHeader {
+  text-align: left;
+  font-size: 16px;
+  padding: 20px 0;
+  color: #6D6D6D;
+}
+.Resources .Link {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #5A38EE;
+}
+.Resources .ResourcesBody {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  gap: 15px;
+}
+.Resources .ResourcesBody .Left {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: none;
+}
+.Resources .ResourcesBody .Left .Detail .Title {
+  font-size: 17px;
+  font-weight: 500;
+}
+.Resources .ResourcesBody .Left .Detail .Description {
+  color: #6D6D6D;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.Resources .ResourcesBody .Right {
+  width: 30%;
+}
+.Resources .ResourcesBody .Right .Hint {
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #dfdfdf;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.Resources .ResourcesBody .Right .Hint .Title {
+  font-size: 17px;
+  font-weight: 500;
+}
+.Resources .ResourcesBody .Right .Hint .Description {
+  color: #6D6D6D;
+  font-size: 16px;
+  margin: 20px 0;
+}
+.Resources .ResourcesBody .Right .Hint .Link {
+  font-size: 14px;
+}/*# sourceMappingURL=Resources.css.map */

@@ -1,0 +1,114 @@
+.AutoTherm .AutoThermBody {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  width: 100%;
+  gap: 15px;
+}
+.AutoTherm .AutoThermBody .Left {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 0;
+  border: none;
+}
+.AutoTherm .AutoThermBody .Left .Overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 40px;
+}
+.AutoTherm .AutoThermBody .Left .Overview .Item {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.AutoTherm .AutoThermBody .Left .Overview .Item .Title {
+  text-align: left;
+  font-weight: 500;
+  font-size: 17px;
+}
+.AutoTherm .AutoThermBody .Left .Overview .Item .Value {
+  text-align: left;
+  font-size: 14px;
+  color: #000;
+}
+.AutoTherm .AutoThermBody .Left .OrderNotes .NoteHeader {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+}
+.AutoTherm .AutoThermBody .Left .OrderNotes .NoteList {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 300px;
+  overflow-y: scroll;
+}
+.AutoTherm .AutoThermBody .Left .OrderNotes .NoteList .NoteDetail .Poster {
+  text-align: left;
+}
+.AutoTherm .AutoThermBody .Left .OrderNotes .NoteList .NoteDetail .Description {
+  text-align: left;
+  padding-left: 10px;
+  border-left: 1px solid rgb(185, 185, 185);
+}
+.AutoTherm .AutoThermBody .Left .ItemList .ItemHeader {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 80px 90px 180px 1fr 100px 142px;
+  height: 70px;
+  border-bottom: 1px solid rgb(212, 212, 212);
+}
+.AutoTherm .AutoThermBody .Left .ItemList .ItemHeader .Title {
+  font-size: 15px;
+  text-align: left;
+}
+.AutoTherm .AutoThermBody .Left .ItemList .ItemHeader .Title::before {
+  content: none;
+}
+.AutoTherm .AutoThermBody .Left .ItemList .ItemHeader .Title.Header {
+  font-weight: 500;
+}
+.AutoTherm .AutoThermBody .Left .ItemList .ItemHeader .Icon {
+  font-size: 25px;
+}
+.AutoTherm .AutoThermBody .Left .ItemList .ItemHeader .Action {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.AutoTherm .AutoThermBody .Right {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.AutoTherm .AutoThermBody .Right .OrderInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.AutoTherm .AutoThermBody .Right .OrderInfo .Label {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+}
+.AutoTherm .AutoThermBody .Right .OrderInfo .Value {
+  font-size: 35px;
+  color: #000;
+  font-weight: bold;
+}
+.AutoTherm .AutoThermBody .Right .OrderInfo .TicketValue {
+  font-size: 15px;
+  font-weight: bold;
+}
+.AutoTherm .AutoThermBody .Right .OrderInfo .HistoryProduct {
+  font-size: 15px;
+}
+.AutoTherm .AutoThermBody .Right .Support {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}/*# sourceMappingURL=AutoTherm.css.map */

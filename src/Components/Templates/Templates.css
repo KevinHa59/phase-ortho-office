@@ -3,19 +3,16 @@
   height: 40px;
   padding: 8px;
 }
-
 .NavButton .Icon {
   font-size: 24px;
   color: #666666;
   fill: #666666;
 }
-
 .NavButton .Icon.Active {
   background-color: #E8EAF6;
   fill: #5A38EE;
   color: #5A38EE;
 }
-
 .NavButton.Active {
   background-color: #E8EAF6;
 }
@@ -23,13 +20,34 @@
 .LinkTextButton {
   text-decoration: none;
 }
-
 .LinkTextButton .NavTextButton {
   width: 100%;
   text-align: left;
-  -webkit-box-pack: start !important;
-      -ms-flex-pack: start !important;
-          justify-content: flex-start !important;
+  justify-content: flex-start !important;
+  padding: 8px 16px;
+  color: #666666;
+  text-transform: unset !important;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 0;
+}
+.LinkTextButton .NavTextButton.Active {
+  background-color: #E8EAF6;
+  border-right: #5A38EE 2px solid;
+  color: #5A38EE;
+}
+.LinkTextButton .NavTextButton:hover {
+  background-color: #e7e7e7;
+}
+
+.LinkGroupButton {
+  text-decoration: none;
+}
+.LinkGroupButton .NavGroupButton {
+  width: 100%;
+  text-align: left;
+  justify-content: space-between !important;
   padding: 8px 16px;
   color: #666666;
   text-transform: unset !important;
@@ -39,14 +57,139 @@
   border-radius: 0;
   white-space: nowrap;
 }
-
-.LinkTextButton .NavTextButton.Active {
+.LinkGroupButton .NavGroupButton.Active {
   background-color: #E8EAF6;
   border-right: #5A38EE 3px solid;
   color: #5A38EE;
 }
-
-.LinkTextButton .NavTextButton:hover {
+.LinkGroupButton .NavGroupButton:hover {
   background-color: #e7e7e7;
 }
-/*# sourceMappingURL=Templates.css.map */
+.LinkGroupButton .NavGroupButton .Icon {
+  font-size: 20px;
+  transform: rotateZ(0deg);
+  transition: 0.2s ease-in-out;
+}
+.LinkGroupButton .NavGroupButton .Icon.Active {
+  transform: rotateZ(180deg);
+}
+.LinkGroupButton .NavTextContainer {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: flex-end;
+  min-height: 0;
+  max-height: 0;
+  transition: ease-in-out 0.2s;
+  overflow: hidden;
+}
+.LinkGroupButton .NavTextContainer.Active {
+  max-height: 100%;
+}
+.LinkGroupButton .NavTextContainer .NavTextButton {
+  width: 90%;
+  text-align: left;
+  justify-content: flex-start !important;
+  padding: 8px 16px;
+  color: #666666;
+  text-transform: unset !important;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 0;
+  text-decoration: none;
+  border-right: #5A38EE 3px transparent;
+}
+.LinkGroupButton .NavTextContainer .NavTextButton.Active {
+  background-color: #E8EAF6;
+  border-right: #5A38EE 3px solid;
+  color: #5A38EE;
+}
+.LinkGroupButton .NavTextContainer .NavTextButton:hover {
+  background-color: #e7e7e7;
+}
+
+.InfoPanel {
+  cursor: pointer;
+  display: flex;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #dfdfdf;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.InfoPanel .IconContainer {
+  width: 68px;
+  height: 72px;
+  margin-right: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.InfoPanel .IconContainer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #E8EAF6;
+  position: absolute;
+  border-radius: 5px;
+}
+.InfoPanel .IconContainer::after {
+  content: "";
+  width: 44px;
+  height: 48px;
+  background-color: #7986CB;
+  position: absolute;
+  border-radius: 5px;
+}
+.InfoPanel .IconContainer.Purple::before {
+  background-color: #E8EAF6;
+}
+.InfoPanel .IconContainer.Purple::after {
+  background-color: #7986CB;
+}
+.InfoPanel .IconContainer.Yellow::before {
+  background-color: #FFF3E0;
+}
+.InfoPanel .IconContainer.Yellow::after {
+  background-color: #FFB74D;
+}
+.InfoPanel .IconContainer.Blue::before {
+  background-color: #E3F2FD;
+}
+.InfoPanel .IconContainer.Blue::after {
+  background-color: #64B5F6;
+}
+.InfoPanel .IconContainer.Pink::before {
+  background-color: #F3E5F5;
+}
+.InfoPanel .IconContainer.Pink::after {
+  background-color: #BA68C8;
+}
+.InfoPanel .IconContainer .Icon {
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+}
+
+.BlankPanel {
+  background-color: #fff;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 15px;
+}
+
+.ButtonItem {
+  background-color: #5A38EE !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  text-transform: unset !important;
+  height: 42px;
+}
+.ButtonItem.Disabled {
+  background-color: #ccc !important;
+  color: #fff !important;
+}/*# sourceMappingURL=Templates.css.map */

@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "Resources.scss"
-    ],
-    "names": [],
-    "file": "Resources.css"
-}
+{"version":3,"sources":["Resources.scss","Resources.css","../../../../../Styles/_variable.scss"],"names":[],"mappings":"AACA;EACI,gBAAA;ACAJ;ADEI;EACI,gBAAA;EACA,eAAA;EACA,eAAA;EACA,cAAA;ACAR;ADGI;EACI,eAAA;EACA,gBAAA;EACA,qBAAA;EACA,cEVQ;ADShB;ADII;EACI,gBAAA;EACA,aAAA;EACA,WAAA;EACA,SAAA;ACFR;ADGQ;EACI,cAAA;EACA,aAAA;EACA,sBAAA;EACA,SAAA;EACA,YAAA;ACDZ;ADIgB;EACI,eAAA;EACA,gBAAA;ACFpB;ADIgB;EACI,cAAA;EACA,eAAA;EACA,eAAA;ACFpB;ADMQ;EACG,UAAA;ACJX;ADMW;EACC,aAAA;EACA,sBAAA;EACA,kBAAA;EACA,yBAAA;EACA,0CAAA;EACA,2BAAA;EAAA,wBAAA;EAAA,mBAAA;ACJZ;ADKY;EACI,eAAA;EACA,gBAAA;ACHhB;ADKY;EACI,cAAA;EACI,eAAA;EACA,cAAA;ACHpB;ADKY;EACI,eAAA;ACHhB","file":"Resources.css"}

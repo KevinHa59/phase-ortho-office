@@ -1,0 +1,68 @@
+@import "../../../../../Styles/stylesCombine";
+.Resources{
+    text-align: left;
+   
+    .SubHeader{
+        text-align: left;
+        font-size: 16px;
+        padding: 20px 0;
+        color: #6D6D6D;
+    }
+
+    .Link{
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+        color: $LinkTextColor;
+    }
+
+    .ResourcesBody{
+        margin-top: 30px;
+        display: flex;
+        width: 100%;
+        gap: 15px;
+        .Left{
+            width: inherit;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            border: none;
+            
+            .Detail{
+                .Title{
+                    font-size: 17px;
+                    font-weight: 500;
+                }
+                .Description{
+                    color: #6D6D6D;
+                    font-size: 16px;
+                    margin-top: 5px;
+                }
+            }
+        }
+        .Right{
+           width: 30%;
+
+           .Hint{
+            padding: 16px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #dfdfdf;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+            height: max-content;
+            .Title{
+                font-size: 17px;
+                font-weight: 500;
+            }
+            .Description{
+                color: #6D6D6D;
+                    font-size: 16px;
+                    margin: 20px 0;
+            }
+            .Link{  
+                font-size: 14px;
+            }
+           }
+        }
+    }
+}

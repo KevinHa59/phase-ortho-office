@@ -1,0 +1,52 @@
+.PageRouter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 70px;
+  height: 100vh;
+}
+
+.PageRouter .Left {
+  width: 256px;
+  border-right: 1px solid #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 25px;
+}
+
+.PageRouter .Left .Header {
+  padding-top: 32px;
+  padding-bottom: 24px;
+  font-size: 24px;
+  text-align: left;
+  font-weight: 500;
+  color: #000;
+  position: relative;
+}
+
+.PageRouter .Left .Header::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 75px;
+  height: 1px;
+  background-color: #d4d4d4;
+}
+
+.PageRouter .Left .MenuList {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=PageRouter.css.map */

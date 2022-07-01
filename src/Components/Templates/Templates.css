@@ -1,0 +1,52 @@
+.NavButton {
+  width: 64px;
+  height: 40px;
+  padding: 8px;
+}
+
+.NavButton .Icon {
+  font-size: 24px;
+  color: #666666;
+  fill: #666666;
+}
+
+.NavButton .Icon.Active {
+  background-color: #E8EAF6;
+  fill: #5A38EE;
+  color: #5A38EE;
+}
+
+.NavButton.Active {
+  background-color: #E8EAF6;
+}
+
+.LinkTextButton {
+  text-decoration: none;
+}
+
+.LinkTextButton .NavTextButton {
+  width: 100%;
+  text-align: left;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  padding: 8px 16px;
+  color: #666666;
+  text-transform: unset !important;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 0;
+  white-space: nowrap;
+}
+
+.LinkTextButton .NavTextButton.Active {
+  background-color: #E8EAF6;
+  border-right: #5A38EE 3px solid;
+  color: #5A38EE;
+}
+
+.LinkTextButton .NavTextButton:hover {
+  background-color: #e7e7e7;
+}
+/*# sourceMappingURL=Templates.css.map */

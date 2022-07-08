@@ -1,45 +1,54 @@
-import { MdHome, MdInventory, MdPrecisionManufacturing, MdAdminPanelSettings, MdOutlineAttachMoney, MdHighQuality, MdHail } from 'react-icons/md';
+import { MdHome, MdInventory, MdPrecisionManufacturing, MdAdminPanelSettings, MdOutlineAttachMoney, MdHighQuality, MdHail, MdLogin, MdAccountCircle } from 'react-icons/md';
 
 export const Menu = [
   {
     name: 'Home',
     icon: <MdHome className="Icon" />,
     path: '/home/resources',
+    roles: ['Guest', 'User', 'Admin'], // who can see this menu
     subMenu: [
       {
         name: 'Resources',
         path: '/home/resources',
+        roles: ['Guest', 'User', 'Admin'],
       },
       {
         name: 'Feedback',
         path: '/home/feedback',
+        roles: ['Guest', 'User', 'Admin'],
       },
       {
         name: 'User Profile',
         path: '/home/user-profile',
+        roles: ['Guest', 'User', 'Admin'],
       },
     ],
   },
   {
     name: 'Order Management',
     icon: <OrderManagerIcon className="Icon" />,
-    path: '/order-management/orders',
+    path: '/order-management/orders-page',
+    roles: ['Guest', 'User', 'Admin'],
     subMenu: [
       {
         name: 'Orders Page',
-        path: '/order-management/orders',
+        path: '/order-management/orders-page',
+        roles: ['Guest', 'User', 'Admin'],
       },
       {
         name: 'CM Sticky 1',
         path: '/order-management/cm-sticky-1',
+        roles: ['Guest', 'User', 'Admin'],
       },
       {
         name: 'CM Sticky 2',
         path: '/order-management/cm-sticky-1',
+        roles: ['Guest', 'User', 'Admin'],
       },
       {
         name: 'CM Sticky 3',
         path: '/order-management/cm-sticky-1',
+        roles: ['Guest', 'User', 'Admin'],
       },
     ],
   },
@@ -47,18 +56,22 @@ export const Menu = [
     name: 'Inventory',
     icon: <MdInventory className="Icon" />,
     path: '/inventory/warehouse',
+    roles: ['Guest', 'User', 'Admin'],
     subMenu: [
       {
         name: 'Warehouse',
         path: '/inventory/warehouse',
+        roles: ['Guest', 'User', 'Admin'],
       },
       {
         name: 'Internal inventory',
         path: '/inventory/internal-inventory',
+        roles: ['Guest', 'User', 'Admin'],
       },
       {
         name: 'External inventory',
         path: '/inventory/external-inventory',
+        roles: ['Guest', 'User', 'Admin'],
       },
     ],
   },
@@ -66,42 +79,52 @@ export const Menu = [
     name: 'Manufacturing',
     icon: <MdPrecisionManufacturing className="Icon" />,
     path: '/manufacturing/scheduling',
+    roles: ['Guest', 'User', 'Admin'],
     subMenu: [
       {
         name: 'Scheduling',
         path: '/manufacturing/scheduling',
+        roles: ['Guest', 'User', 'Admin'],
       },
       {
         name: 'Health analytics',
         path: '/manufacturing/health-analytics',
+        roles: ['Guest', 'User', 'Admin'],
       },
       {
         name: 'Terminals',
         path: '/manufacturing/terminals',
+        roles: ['Admin'],
         subMenu: [
           {
             name: 'Auto Therm',
             path: '/manufacturing/terminals/auto-therm',
+            roles: ['Admin'],
           },
           {
             name: 'Laser',
             path: '/manufacturing/terminals/laser',
+            roles: ['Admin'],
           },
           {
             name: 'Mill',
             path: '/manufacturing/terminals/mill',
+            roles: ['Admin'],
           },
           {
             name: 'Tumble',
             path: '/manufacturing/terminals/tumble',
+            roles: ['Admin'],
           },
           {
             name: 'Review',
             path: '/manufacturing/terminals/review',
+            roles: ['Admin'],
           },
           {
             name: 'Pack & Ship',
             path: '/manufacturing/terminals/pack-ship',
+            roles: ['Admin'],
           },
         ],
       },
@@ -111,18 +134,22 @@ export const Menu = [
     name: 'Administration',
     icon: <MdAdminPanelSettings className="Icon" />,
     path: '/administration/atlassian',
+    roles: ['Admin'],
     subMenu: [
       {
         name: 'Atlassian',
         path: '/administration/atlassian',
+        roles: ['Admin'],
       },
       {
         name: 'Analytics',
         path: '/administration/analytics',
+        roles: ['Admin'],
       },
       {
         name: 'KPI-OKR',
         path: '/administration/kpi-okr',
+        roles: ['Admin'],
       },
     ],
   },
@@ -130,22 +157,27 @@ export const Menu = [
     name: 'Financial',
     icon: <MdOutlineAttachMoney className="Icon" />,
     path: '/financial/current',
+    roles: ['Guest', 'User', 'Admin'],
     subMenu: [
       {
         name: 'Current',
         path: '/financial/current',
+        roles: ['Guest', 'User', 'Admin'],
       },
       {
         name: 'Historical',
         path: '/financial/historical',
+        roles: ['Guest', 'User', 'Admin'],
       },
       {
         name: 'Projections',
         path: '/financial/projections',
+        roles: ['Guest', 'User', 'Admin'],
       },
       {
         name: 'Operations',
         path: '/financial/operations',
+        roles: ['Guest', 'User', 'Admin'],
       },
     ],
   },
@@ -153,41 +185,70 @@ export const Menu = [
     name: 'Quality',
     icon: <MdHighQuality className="Icon" />,
     path: '/quality/standard-operating-procedures',
+    roles: ['Guest', 'User', 'Admin'],
     subMenu: [
       {
         name: 'Standard Operating Procedures',
         path: '/quality/standard-operating-procedures',
+        roles: ['Guest', 'User', 'Admin'],
       },
       {
         name: 'Work Instructions',
         path: '/quality/work-instructions',
+        roles: ['Guest', 'User', 'Admin'],
       },
       {
         name: 'Trainings',
         path: '/quality/trainings',
+        roles: ['Guest', 'User', 'Admin'],
       },
     ],
   },
   {
     name: 'Human Resources',
     icon: <MdHail className="Icon" />,
-    path: '/human-resources/records',
+    path: '/human-resources/employees',
+    roles: ['Admin'],
     subMenu: [
       {
-        name: 'Records',
-        path: '/human-resources/records',
+        name: 'Employees',
+        path: '/human-resources/employees',
+        roles: ['Admin'],
       },
       {
         name: 'Reviews',
         path: '/human-resources/reviews',
+        roles: ['Admin'],
       },
       {
         name: 'Documents',
         path: '/human-resources/documents',
+        roles: ['Admin'],
       },
       {
         name: 'Organization Chart',
         path: '/human-resources/organization-chart',
+        roles: ['Admin'],
+      },
+    ],
+  },
+
+  //Account must always stay at the end of the menu
+  {
+    name: 'Account',
+    icon: <MdAccountCircle className="Icon" />,
+    path: '/auth/user/overview',
+    roles: ['User', 'Admin', 'Guest'],
+    subMenu: [
+      {
+        name: 'Overview',
+        path: '/auth/user/overview',
+        roles: ['User', 'Admin', 'Guest'],
+      },
+      {
+        name: 'Change Password',
+        path: '/auth/user/change-password',
+        roles: ['User', 'Admin', 'Guest'],
       },
     ],
   },

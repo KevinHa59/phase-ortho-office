@@ -1,0 +1,80 @@
+.InformationContainer {
+  display: flex;
+  gap: 50px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.InformationContainer .Avatar {
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  position: relative;
+}
+.InformationContainer .Avatar .SVGIcon {
+  position: absolute;
+  stroke-width: 1px;
+}
+.InformationContainer .Avatar .SVGIcon.Admin {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  stroke: rgb(40, 115, 255);
+  stroke-width: 1px;
+}
+.InformationContainer .Avatar .SVGIcon.Admin.Shadow {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  stroke: rgb(203, 221, 255);
+}
+.InformationContainer .Avatar .SVGIcon.Guest {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  stroke: rgb(40, 255, 148);
+  stroke-width: 1px;
+}
+.InformationContainer .Avatar .SVGIcon.Guest.Shadow {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  stroke: rgb(203, 255, 226);
+}
+.InformationContainer .Avatar .SVGIcon.User {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  stroke: rgb(255, 40, 140);
+  stroke-width: 1px;
+}
+.InformationContainer .Avatar .SVGIcon.User.Shadow {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  stroke: rgb(255, 203, 235);
+}
+.InformationContainer .Information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.InformationContainer .Information .InfoItem {
+  display: flex;
+  gap: 10px;
+}
+.InformationContainer .Information .InfoItem .Label {
+  font-weight: bold;
+}/*# sourceMappingURL=UserOverview.css.map */

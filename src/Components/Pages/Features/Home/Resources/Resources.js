@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Resources.css';
 import '../../../../../Styles/styles.css';
 import { MdOpenInNew, MdInfo, MdCode, MdPlayCircle, MdArrowForward } from 'react-icons/md';
 import wavingHand from '../../../../../Images/Waving.png';
 import InfoPanel from '../../../../Templates/Panel/InfoPanel';
 export default function Resources() {
+  useEffect(() => {
+    document.title = 'Resources';
+  }, []);
+
   return (
     <div className="MainBodyContainer">
       <div className="Resources">

@@ -1,0 +1,277 @@
+@import "../../../../../Styles/stylesCombine";
+.EmployeeContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 10px;
+    .ListController{
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0px;
+        padding: 5px 10px;
+        position: relative;
+        border-bottom: 1px solid rgb(216, 214, 214);
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 3px;
+            height: 80%;
+            background-color: #3b5df5;
+        }
+        .Control{
+            display: flex;
+            gap:10px;
+            align-items: center;
+            .Input{
+                outline: none;
+                padding: 5px 10px;
+                border-radius: 5px;
+                border: 1px solid rgb(168, 168, 168);
+            }
+            .Sort{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+    }
+    .ListHeader{
+        display: grid;
+        font-weight: 500;
+        grid-template-columns: 1.5fr 2fr 2fr 4fr 2fr 3fr 3fr;
+
+        background-color: rgb(104, 69, 230);
+        padding: 10px 0px;
+        color: #fff;
+        .Label{
+            text-align: left;
+            text-shadow: 0px 0px 3px #000;
+            &.Center{
+                text-align: center;
+            }
+        }
+    }
+    .ListBody{
+        overflow: hidden;
+        overflow-y: auto;
+        @include Scroll-Bar;
+        height: 100%;
+        
+        //Simple Style
+        // .ListItem{
+        //     display: grid;
+        //     grid-template-columns: 1.5fr 2fr 2fr 4fr 2fr 3fr 3fr;
+        //     height: 70px;
+        //     border-bottom: 1px solid rgb(196, 196, 196);
+        //     .Detail{
+        //         text-align: left;
+        //         display: flex;
+        //         align-items: center;
+        //         font-size: 14px;
+                
+        //         &.Center{
+        //             justify-content: center;
+ 
+        //             font-weight: 500;
+                    
+        //         }
+        //         .Avatar{
+                    
+        //             width: 60px;
+        //             height: 60px;
+        //             overflow: hidden;
+        //             border-radius: 50%;
+        //             border: 1px solid rgb(33, 131, 243);
+        //             display: flex;
+        //             justify-content: center;
+        //             align-items: center;
+        //             background-color: #a0b1ff;
+        //             position: relative;
+        //             z-index: 2;
+        //             box-shadow: 3px 3px 5px rgba(19, 30, 189, 0.534);
+        //             &::before{
+        //                 content: "";
+        //                 position: absolute;
+        //                 width: 100%;
+        //                 height: 100%;
+        //                 top: 10px;
+        //                 left: 10px;
+        //                 background-color: #596cbe;
+        //                 border-radius: 50%;
+        //                 z-index: 1;
+        //             }
+        //             img{
+        //                 position: relative;
+        //                 width: 150%;
+        //                 height: 150%;
+        //                z-index: 2;
+        //             }
+        //         }
+        //     }
+        //     &.isOdd{
+               
+        //     }
+        // }
+
+        //Style 2
+        .ListItem{
+            display: flex;
+            padding: 20px 10px;
+            border-bottom: 1px solid rgb(196, 196, 196);
+            height: max-content;
+            width: 100%;
+            position: relative;
+            .ItemLeft{
+                height: max-content;
+               padding: 0 20px;
+                font-family: 'Courier New', Courier, monospace;
+                letter-spacing: -10px;
+                font-weight: bold;
+               
+            }
+            .ItemRight{
+  
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+                width: inherit;
+                .S2{
+
+                 
+
+                    text-align: left;
+                    span{
+                        font-weight: 500;
+                    }
+                }
+                .S3{
+                    height: max-content;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    
+                    .TaskItem{
+                        width: 100%;
+                        position: relative;
+                        .TaskName{
+
+                            height: 100%;
+                            padding: 5px 0;
+                            cursor: pointer;
+
+                            border-top: 1px solid rgb(189, 189, 189);
+                            border-bottom: 1px solid rgb(189, 189, 189);
+                            &:hover{
+                                font-weight: 500;
+                                color: #3b5df5;
+                                border-top: #3b5df5 solid 1px;
+                                border-bottom: #3b5df5 solid 1px;
+                                background-color: #3b5df5;
+                                color: #fff;
+                            }
+                        }
+                        .Detail{
+                            position: absolute;
+                            display: flex;
+                            right: 0;
+                           bottom: 100%;
+                            visibility: hidden;
+                            opacity: 0;
+                            border-radius: 5px;
+                            border: 1px solid #3b5df5;
+                            background-color: #3b5df5;
+                            box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+                            color: #fff;
+                           
+                            z-index: 5;
+                            .Section{
+                                padding: 5px 10px;
+                                white-space: nowrap;
+                            }
+                        }
+
+                        &:hover .Detail{
+                            visibility: visible;
+                            opacity: 1;
+                            
+                        }
+                    }
+                }
+            }
+            // .Section{
+            //     text-align: left;
+            //     display: flex;
+            //     flex-direction: column;
+            //     align-items: flex-start;
+            //     justify-content: flex-start;
+            //     gap: 5px;
+            //     font-size: 14px;
+            //     height: max-content;
+            //     &.Center{
+            //         justify-content: center;
+ 
+            //         font-weight: 500;
+                    
+            //     }
+            //     .Avatar{
+                    
+            //         width: 80px;
+            //         height: 80px;
+            //         overflow: hidden;
+            //         border-radius: 50%;
+            //         border: 1px solid rgb(33, 131, 243);
+            //         display: flex;
+            //         justify-content: center;
+            //         align-items: center;
+            //         background-color: #a0b1ff;
+            //         position: relative;
+            //         z-index: 2;
+            //         box-shadow: 3px 3px 5px rgba(19, 30, 189, 0.534);
+            //         &::before{
+            //             content: "";
+            //             position: absolute;
+            //             width: 100%;
+            //             height: 100%;
+            //             top: 10px;
+            //             left: 10px;
+            //             background-color: #596cbe;
+            //             border-radius: 50%;
+            //             z-index: 1;
+            //         }
+            //         img{
+            //             position: relative;
+            //             width: 150%;
+            //             height: 150%;
+            //            z-index: 2;
+            //         }
+            //     }
+            //     .Name{
+            //         font-weight: 500;
+            //      }
+            //      &.S1{
+            //         width: max-content;
+            //         padding: 0 20px;
+            //         padding-left: 0;
+            //      }
+            //      &.S2{
+            //         width: 220px;
+            //      }
+            //      &.S3{
+            //         width: 250px;
+            //      }
+            // }
+
+            &.isOdd{
+               
+            }
+        }
+        
+    }
+}

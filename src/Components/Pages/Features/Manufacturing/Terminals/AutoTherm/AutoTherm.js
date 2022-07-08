@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../../../../../Styles/styles.css';
 import './AutoTherm.css';
 import BlankPanel from '../../../../../Templates/Panel/BlankPanel';
@@ -8,6 +8,40 @@ import Checkbox from '@mui/material/Checkbox';
 import { MdSettings, MdEdit, MdDelete, MdOpenInNew } from 'react-icons/md';
 export default function AutoTherm() {
   const Stages = ['Begin Task', 'Task In Progress', 'Task Complete'];
+  const [OverviewData, setOverviewData] = useState([
+    {
+      title: 'customer',
+      value: 'ORTHORFX',
+    },
+    {
+      title: 'Due Date',
+      value: 'June 6th 2022"',
+    },
+    {
+      title: 'Ship Date',
+      value: '(-2) June 4th 2022',
+    },
+    {
+      title: 'Patient',
+      value: 'Example',
+    },
+    {
+      title: 'RX',
+      value: '0085673659475',
+    },
+    {
+      title: 'REFERENCE',
+      value: 'U|L1-14;U|LA',
+    },
+    {
+      title: 'PRODUCT',
+      value: 'Zendura',
+    },
+    {
+      title: 'UNITS',
+      value: '30',
+    },
+  ]);
   return (
     <div className="MainBodyContainer">
       <div className="AutoTherm">
@@ -15,14 +49,9 @@ export default function AutoTherm() {
         <div className="AutoThermBody">
           <div className="Left">
             <BlankPanel className="Overview">
-              <OverviewItem title="customer" value="ORTHOFX" />
-              <OverviewItem title="Due Date" value="June 6th 2022" />
-              <OverviewItem title="SHIP DATE" value="(-2) June 4th 2022" />
-              <OverviewItem title="PATIENT" value="Example" />
-              <OverviewItem title="RX" value="0085673659475" />
-              <OverviewItem title="REFERENCE" value="U|L1-14;U|LA" />
-              <OverviewItem title="PRODUCT" value="Zendura" />
-              <OverviewItem title="UNITS" value="30" />
+              {OverviewData.map((item, index) => {
+                return <OverviewItem title={item.title} value={item.value} />;
+              })}
               <ButtonStageItem Stages={Stages} currentStageIndex={0} />
             </BlankPanel>
             <BlankPanel className="OrderNotes">

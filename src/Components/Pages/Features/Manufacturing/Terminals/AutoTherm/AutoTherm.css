@@ -46,6 +46,16 @@
   height: 300px;
   overflow-y: scroll;
 }
+.AutoTherm .AutoThermBody .Left .OrderNotes .NoteList::-webkit-scrollbar {
+  width: 7px;
+  background-color: #dadada;
+}
+.AutoTherm .AutoThermBody .Left .OrderNotes .NoteList::-webkit-scrollbar-button {
+  height: 0;
+}
+.AutoTherm .AutoThermBody .Left .OrderNotes .NoteList::-webkit-scrollbar-thumb {
+  background-color: #a3a3a3;
+}
 .AutoTherm .AutoThermBody .Left .OrderNotes .NoteList .NoteDetail .Poster {
   text-align: left;
 }

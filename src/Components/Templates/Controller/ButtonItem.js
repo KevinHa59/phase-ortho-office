@@ -7,7 +7,7 @@ const ButtonItem = (props) => {
       {props.children}
     </Button>
   ) : (
-    <Button variant="text" className={'ButtonItem ' + props.className}>
+    <Button variant="text" className={'ButtonItem ' + props.className} onClick={props.onClick}>
       {props.children}
     </Button>
   );

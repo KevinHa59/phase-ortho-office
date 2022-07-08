@@ -14,7 +14,7 @@ const NavTextButton = (props) => {
     <Link key={props.index} to={props.to} className="LinkTextButton">
       <Button
         variant="text"
-        className={props.index === 0 ? 'NavTextButton Active' : 'NavTextButton'}
+        className={'NavTextButton ' + props.isActive}
         onClick={(event) => {
           NavButtonClickHandler(event);
         }}

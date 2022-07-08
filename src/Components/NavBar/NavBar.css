@@ -6,6 +6,21 @@
   width: 70px;
   border-right: 1px solid #e6e6e6;
   background-color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+.NavBar::-webkit-scrollbar {
+  width: 7px;
+  background-color: #dadada;
+}
+.NavBar::-webkit-scrollbar-button {
+  height: 0;
+}
+.NavBar::-webkit-scrollbar-thumb {
+  background-color: #a3a3a3;
 }
 .NavBar .Logo {
   padding-top: 25px;
@@ -14,10 +29,24 @@
   width: 50px;
   height: 50px;
 }
-.NavBar .NavLinkContainer {
+.NavBar .MenuLinkContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: inherit;
+}
+.NavBar .MenuLinkContainer .NavLinkContainer {
   padding-top: 13px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
+}
+.NavBar .MenuLinkContainer .AccountContainer {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }/*# sourceMappingURL=NavBar.css.map */

@@ -1,0 +1,82 @@
+.InformationContainer{
+    display: flex;
+    gap: 50px;
+    width: max-content;
+    .Avatar{
+        min-width: 200px;
+        max-width: 200px;
+        min-height: 200px;
+        max-height: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 80px;
+        position: relative;
+        .SVGIcon{
+            position: absolute;
+            
+            
+            stroke-width: 1px;
+            &.Admin{
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+                stroke: rgb(40, 115, 255);
+                stroke-width: 1px;
+                &.Shadow{
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    stroke: rgb(203, 221, 255);
+                }
+            }
+            &.Guest{
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+                stroke: rgb(40, 255, 148);
+                stroke-width: 1px;
+                &.Shadow{
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    stroke: rgb(203, 255, 226);
+                }
+            }
+            &.User{
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+                stroke: rgb(255, 40, 140);
+                stroke-width: 1px;
+                &.Shadow{
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    stroke: rgb(255, 203, 235);
+                }
+            }
+
+        }
+    }
+    .Information{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .InfoItem{
+            display: flex;
+            gap: 10px;
+            .Label{
+                font-weight: bold;
+            }
+        }
+    }
+}

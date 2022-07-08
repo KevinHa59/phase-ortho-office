@@ -1,0 +1,37 @@
+.MainLoginContainer {
+  display: flex;
+  justify-content: center;
+}
+.MainLoginContainer .LoginPanel {
+  padding-top: 50px;
+}
+.MainLoginContainer .LoginPanel .LoginForm {
+  width: 500px;
+}
+.MainLoginContainer .LoginPanel .LoginForm img {
+  height: 120px;
+}
+.MainLoginContainer .LoginPanel .LoginForm .Header {
+  font-size: 30px;
+  font-weight: 500;
+}
+.MainLoginContainer .LoginPanel .LoginForm .SubHeader {
+  font-size: 15px;
+}
+.MainLoginContainer .LoginPanel .LoginForm .Form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.MainLoginContainer .LoginPanel .LoginForm .Action {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.MainLoginContainer .LoginPanel .LoginForm .Controller {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 10px;
+}/*# sourceMappingURL=Login.css.map */

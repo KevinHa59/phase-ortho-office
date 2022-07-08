@@ -2,19 +2,72 @@
   width: 64px;
   height: 40px;
   padding: 8px;
+  color: #666666;
+  fill: #666666;
+  position: relative;
+  z-index: 5;
 }
 .NavButton .Icon {
   font-size: 24px;
   color: #666666;
   fill: #666666;
 }
-.NavButton .Icon.Active {
-  background-color: #E8EAF6;
-  fill: #5A38EE;
-  color: #5A38EE;
-}
 .NavButton.Active {
   background-color: #E8EAF6;
+}
+.NavButton.Active .Icon {
+  font-size: 24px;
+  fill: #5A38EE !important;
+  color: #5A38EE !important;
+}
+.NavButton .ToolTip {
+  position: absolute;
+  left: 110%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgb(34, 34, 34);
+  font-size: 10px;
+  color: #fff;
+  padding: 4px 6px;
+  border-radius: 10px;
+  transition: ease-in-out 0.1s;
+  z-index: 5;
+}
+.NavButton:hover .ToolTip {
+  visibility: visible;
+  opacity: 1;
+  background-color: rgb(63, 63, 63);
+  font-size: 10px;
+  color: #fff;
+  padding: 4px 6px;
+  border-radius: 10px;
+}
+.NavButton:hover {
+  background-color: #E8EAF6;
+}
+
+.NavLoginButton {
+  width: 64px;
+  height: 40px;
+  padding: 8px;
+}
+.NavLoginButton .Icon {
+  font-size: 24px;
+  color: #666666 !important;
+  fill: #666666 !important;
+}
+.NavLoginButton.Active {
+  background-color: #E8EAF6;
+}
+.NavLoginButton.Active .Icon {
+  font-size: 24px;
+  fill: #5A38EE !important;
+  color: #5A38EE !important;
 }
 
 .LinkTextButton {

@@ -1,3 +1,4 @@
+@import "../../Styles/stylesCombine";
 .PageRouter {
     display: flex;
     padding-left: 70px;
@@ -36,5 +37,9 @@
         overflow: hidden;
         overflow-y: auto;
         width: 100%;
+
+        height: 100vh;
+        position: relative;
+        @include Scroll-Bar;
     }
 }

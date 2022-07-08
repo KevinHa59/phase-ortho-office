@@ -1,0 +1,42 @@
+@import "../../../../../Styles/stylesCombine";
+.MainLoginContainer{
+    display: flex;
+    justify-content: center;
+
+
+    .LoginPanel{
+        padding-top: 50px;
+        .LoginForm{
+            width: 500px;
+            img{
+                height: 120px;
+            }
+            .Header{
+                font-size: 30px;
+                font-weight: 500;
+                
+            }
+            .SubHeader{
+                font-size: 15px;
+            }
+            .Form{
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .Action{
+                padding: 10px 0;
+                display: flex;
+                justify-content: space-between;
+            }
+            .Controller{
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+                gap: 10px;
+            }
+        }
+    }
+}
+

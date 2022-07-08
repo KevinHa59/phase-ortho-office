@@ -1,0 +1,153 @@
+.EmployeeContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+.EmployeeContainer .ListController {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  position: relative;
+  border-bottom: 1px solid rgb(216, 214, 214);
+}
+.EmployeeContainer .ListController::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 80%;
+  background-color: #3b5df5;
+}
+.EmployeeContainer .ListController .Control {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.EmployeeContainer .ListController .Control .Input {
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(168, 168, 168);
+}
+.EmployeeContainer .ListController .Control .Sort {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.EmployeeContainer .ListHeader {
+  display: grid;
+  font-weight: 500;
+  grid-template-columns: 1.5fr 2fr 2fr 4fr 2fr 3fr 3fr;
+  background-color: rgb(104, 69, 230);
+  padding: 10px 0px;
+  color: #fff;
+}
+.EmployeeContainer .ListHeader .Label {
+  text-align: left;
+  text-shadow: 0px 0px 3px #000;
+}
+.EmployeeContainer .ListHeader .Label.Center {
+  text-align: center;
+}
+.EmployeeContainer .ListBody {
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+.EmployeeContainer .ListBody::-webkit-scrollbar {
+  width: 7px;
+  background-color: #dadada;
+}
+.EmployeeContainer .ListBody::-webkit-scrollbar-button {
+  height: 0;
+}
+.EmployeeContainer .ListBody::-webkit-scrollbar-thumb {
+  background-color: #a3a3a3;
+}
+.EmployeeContainer .ListBody .ListItem {
+  display: flex;
+  padding: 20px 10px;
+  border-bottom: 1px solid rgb(196, 196, 196);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+  position: relative;
+}
+.EmployeeContainer .ListBody .ListItem .ItemLeft {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 0 20px;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: -10px;
+  font-weight: bold;
+}
+.EmployeeContainer .ListBody .ListItem .ItemRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: inherit;
+}
+.EmployeeContainer .ListBody .ListItem .ItemRight .S2 {
+  text-align: left;
+}
+.EmployeeContainer .ListBody .ListItem .ItemRight .S2 span {
+  font-weight: 500;
+}
+.EmployeeContainer .ListBody .ListItem .ItemRight .S3 {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.EmployeeContainer .ListBody .ListItem .ItemRight .S3 .TaskItem {
+  width: 100%;
+  position: relative;
+}
+.EmployeeContainer .ListBody .ListItem .ItemRight .S3 .TaskItem .TaskName {
+  height: 100%;
+  padding: 5px 0;
+  cursor: pointer;
+  border-top: 1px solid rgb(189, 189, 189);
+  border-bottom: 1px solid rgb(189, 189, 189);
+}
+.EmployeeContainer .ListBody .ListItem .ItemRight .S3 .TaskItem .TaskName:hover {
+  font-weight: 500;
+  color: #3b5df5;
+  border-top: #3b5df5 solid 1px;
+  border-bottom: #3b5df5 solid 1px;
+  background-color: #3b5df5;
+  color: #fff;
+}
+.EmployeeContainer .ListBody .ListItem .ItemRight .S3 .TaskItem .Detail {
+  position: absolute;
+  display: flex;
+  right: 0;
+  bottom: 100%;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 5px;
+  border: 1px solid #3b5df5;
+  background-color: #3b5df5;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  z-index: 5;
+}
+.EmployeeContainer .ListBody .ListItem .ItemRight .S3 .TaskItem .Detail .Section {
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+.EmployeeContainer .ListBody .ListItem .ItemRight .S3 .TaskItem:hover .Detail {
+  visibility: visible;
+  opacity: 1;
+}/*# sourceMappingURL=Employees.css.map */

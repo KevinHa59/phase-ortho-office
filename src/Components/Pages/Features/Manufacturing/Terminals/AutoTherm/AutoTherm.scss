@@ -50,6 +50,7 @@
                     gap: 20px;
                     height: 300px;
                     overflow-y: scroll;
+                    @include Scroll-Bar;
                     .NoteDetail{
                         .Poster{
                             text-align: left;

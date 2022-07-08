@@ -3,7 +3,12 @@ import '../Templates.css';
 import { Link } from 'react-router-dom';
 import { Button } from '@mui/material';
 import { MdArrowDropDown } from 'react-icons/md';
+
 const NavGroupButton = (props) => {
+  const url = window.location.pathname;
+  const urlLocation = window.location.pathname.split('/')[2];
+  const currentLocation = props.path.split('/')[2];
+
   function LinkGroupExpandHandler(event) {
     event.currentTarget.querySelector('.NavTextContainer').classList.toggle('Active');
     event.currentTarget.querySelector('.Icon').classList.toggle('Active');
@@ -27,15 +32,15 @@ const NavGroupButton = (props) => {
       }}
     >
       <Button variant="text" className={props.index === 0 ? 'NavGroupButton Active' : 'NavGroupButton'}>
-        {props.name} <MdArrowDropDown className="Icon" />
+        {props.name} <MdArrowDropDown className={urlLocation === currentLocation ? 'Icon Active' : 'Icon'} />
       </Button>
-      <div className="NavTextContainer">
+      <div className={urlLocation === currentLocation ? 'NavTextContainer Active' : 'NavTextContainer'}>
         {props.subMenu.map((item, index) => {
           return (
             <Link
               key={index}
               to={item.path}
-              className={props.index === 0 ? 'NavTextButton Active' : 'NavTextButton'}
+              className={url === item.path ? 'NavTextButton Active' : 'NavTextButton'}
               onClick={(event) => {
                 HighlightAndPreventCollapseHandler(event);
               }}
